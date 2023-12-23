@@ -5,19 +5,14 @@
   },
   "extends": [
     "eslint:recommended",
-    "plugin:@typescript-eslint/recommended",
-    "plugin:prettier/recommended"
+    "plugin:@typescript-eslint/recommended"
   ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": "latest",
     "sourceType": "module"
   },
-  "plugins": [
-    "@typescript-eslint",
-    "@typescript-eslint/eslint-plugin",
-    "import"
-  ],
+  "plugins": ["@typescript-eslint", "@typescript-eslint/eslint-plugin", "import"],
   "settings": {
     "import/resolver": {
       "node": {
@@ -33,7 +28,6 @@
     "arrow-parens": [2, "always"],
     "quotes": [2, "single"],
     "import/prefer-default-export": "off",
-    "no-unused-vars": "off",
     "import/no-unresolved": [2, { "caseSensitive": false }],
     "no-restricted-syntax": [
       "error",
