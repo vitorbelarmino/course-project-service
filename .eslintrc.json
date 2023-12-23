@@ -28,13 +28,17 @@
     "arrow-parens": [2, "always"],
     "quotes": [2, "single"],
     "import/prefer-default-export": "off",
+    "@typescript-eslint/no-unused-vars": "warn",
     "import/no-unresolved": [2, { "caseSensitive": false }],
+    "object-curly-spacing": ["error", "always"],
     "no-restricted-syntax": [
       "error",
       "ForInStatement",
       "LabeledStatement",
       "WithStatement"
     ],
+    "no-multiple-empty-lines": ["error", { "max": 1 }],
+    "eol-last": ["error", "always"],
     "import/extensions": [
       "error",
       "ignorePackages",
