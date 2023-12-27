@@ -10,6 +10,11 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+enum TypeLesson {
+  video
+  text
+}
+
 model User {
   id        String   @id @default(uuid())
   email     String   @unique
@@ -24,7 +29,41 @@ model User {
 model Course {
   id        String   @id @default(uuid())
   name      String
+  description String
+  thumbnail  String
+  teacherId String
+  teacher   Teacher @relation(fields: [teacherId], references: [id])
+  categoryId String
+  category   Category @relation(fields: [categoryId], references: [id])
   createdAt DateTime @default(now())
   updatedAt DateTime @updatedAt
   students  User[]
+  lessons   Lesson[]
 }
+
+model Category {
+  id        String   @id @default(uuid())
+  name      String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  courses   Course[]
+}
+model Lesson {
+  id        String   @id @default(uuid())
+  name      String
+  type      TypeLesson
+  content   String
+  urlVideo String?
+  courseId  String
+  course    Course @relation(fields: [courseId], references: [id])
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+}
+model Teacher {
+  id        String   @id @default(uuid())
+  name      String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  courses   Course[]
+}
+
