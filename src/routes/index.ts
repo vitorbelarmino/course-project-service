@@ -7,4 +7,5 @@ export const router = Router()
 router
   .post('/register', Validations.validateRegister ,userController.create)
   .post('/login', Validations.validateLogin, userController.login)
+  .get('/claims', userController.getUserByToken)
   .get('/categories', categoryController.getCategories)

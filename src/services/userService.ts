@@ -50,6 +50,11 @@ class UserService {
     const token = await Token.createToken(user);
     return token;
   }
+
+  public async getUserByToken(token: string) {
+    const user = await Token.verifyToken(token);
+    return user;
+  }
 }
 
 export const userService = new UserService();
