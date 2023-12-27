@@ -4,8 +4,8 @@ import { userService } from '../services/userService';
 class UserController {
   public async create(req: Request, res: Response): Promise<Response> {
     const body = req.body;
-    const user = await userService.create(body)
-    return res.status(201).json(user);
+    const token = await userService.create(body)
+    return res.status(201).json({ token });
   }
 
   public async login(req: Request, res: Response): Promise<Response> {

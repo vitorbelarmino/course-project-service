@@ -13,19 +13,21 @@ class UserService {
     })
 
     if (user) {
-      throw new CustomError(400, 'User already exists');
+      throw new CustomError(409, 'User already exists');
     }
 
     const hashPassword = await BCrypt.hashPassword(userInfo.password);
     
-    const { password, ...newUser } = await prisma.user.create({
+    const newUser = await prisma.user.create({
       data: {
         email: userInfo.email,
         name: userInfo.name,
         password: hashPassword
       }
     })
-    return newUser;
+    const token = await Token.createToken(newUser);
+
+    return token;
   }
 
   public async login(email: string, password: string) {
@@ -36,16 +38,16 @@ class UserService {
     })
 
     if (!user) {
-      throw new CustomError(400, 'User not found');
+      throw new CustomError(404, 'User not found');
     }
 
     const isPasswordValid = await BCrypt.comparePasswords(password, user.password);
 
     if (!isPasswordValid) {
-      throw new CustomError(400, 'Invalid password');
+      throw new CustomError(401, 'Invalid password');
     }
 
-    const token = await Token.createToken(email, password);
+    const token = await Token.createToken(user);
     return token;
   }
 }
