@@ -87,7 +87,7 @@ async function main() {
       name: 'Configuração do Ambiente Node.js',
       type: TypeLesson.video,
       content: 'Configure o ambiente de desenvolvimento Node.js em seu sistema',
-      urlVideo: 'https://www.youtube.com/watch?v=hdex1hj1dmk&ab_channel=Rocketseat',
+      urlVideo: 'https://www.youtube.com/embed/hdex1hj1dmk?si=DeG9R0V326KJlGZy',
       courseId: getCourse[0].id,
     },
     {
@@ -100,14 +100,14 @@ async function main() {
       name: 'Express.js e Roteamento',
       type: TypeLesson.video,
       content: 'Aprenda a usar o framework Express.js e a realizar roteamento em aplicações Node.js',
-      urlVideo: 'https://www.youtube.com/watch?v=hdex1hj1dmk&ab_channel=Rocketseat',
+      urlVideo: 'https://www.youtube.com/embed/hdex1hj1dmk?si=DeG9R0V326KJlGZy',
       courseId: getCourse[0].id,
     },
     {
       name: 'Persistência de Dados com MongoDB',
       type: TypeLesson.video,
       content: 'Explore como realizar persistência de dados usando o MongoDB em aplicações Node.js',
-      urlVideo: 'https://www.youtube.com/watch?v=hdex1hj1dmk&ab_channel=Rocketseat',
+      urlVideo: 'https://www.youtube.com/embed/hdex1hj1dmk?si=DeG9R0V326KJlGZy',
       courseId: getCourse[0].id,
     },
     {
@@ -120,14 +120,14 @@ async function main() {
       name: 'Desenvolvimento de APIs RESTful',
       type: TypeLesson.video,
       content: 'Aprenda a construir APIs RESTful usando Node.js e Express.js',
-      urlVideo: 'https://www.youtube.com/watch?v=hdex1hj1dmk&ab_channel=Rocketseat',
+      urlVideo: 'https://www.youtube.com/embed/hdex1hj1dmk?si=DeG9R0V326KJlGZy',
       courseId: getCourse[0].id,
     },
     {
       name: 'Princípios do Design Responsivo',
       type: TypeLesson.video,
       content: 'Entenda os princípios fundamentais do design responsivo',
-      urlVideo: 'https://www.youtube.com/watch?v=hdex1hj1dmk&ab_channel=Rocketseat',
+      urlVideo: 'https://www.youtube.com/embed/hdex1hj1dmk?si=DeG9R0V326KJlGZy',
       courseId: getCourse[1].id,
     },
     {
@@ -140,14 +140,14 @@ async function main() {
       name: 'Media Queries e Breakpoints',
       type: TypeLesson.video,
       content: 'Explore o uso de media queries e breakpoints no design responsivo',
-      urlVideo: 'https://www.youtube.com/watch?v=hdex1hj1dmk&ab_channel=Rocketseat',
+      urlVideo: 'https://www.youtube.com/embed/hdex1hj1dmk?si=DeG9R0V326KJlGZy',
       courseId: getCourse[1].id,
     },
     {
       name: 'Imagens e Multimídia Responsiva',
       type: TypeLesson.video,
       content: 'Saiba como tornar imagens e multimídia responsivos em seus projetos',
-      urlVideo: 'https://www.youtube.com/watch?v=hdex1hj1dmk&ab_channel=Rocketseat',
+      urlVideo: 'https://www.youtube.com/embed/hdex1hj1dmk?si=DeG9R0V326KJlGZy',
       courseId: getCourse[1].id,
     },
     {
@@ -160,7 +160,7 @@ async function main() {
       name: 'Teste e Otimização',
       type: TypeLesson.video,
       content: 'Aprenda a testar e otimizar suas interfaces responsivas para diferentes dispositivos',
-      urlVideo: 'https://www.youtube.com/watch?v=hdex1hj1dmk&ab_channel=Rocketseat',
+      urlVideo: 'https://www.youtube.com/embed/hdex1hj1dmk?si=DeG9R0V326KJlGZy',
       courseId: getCourse[1].id,
     },
     {
@@ -168,7 +168,7 @@ async function main() {
       content: 'Conceitos básicos e fundamentos do marketing digital.',
       type: TypeLesson.video,
       courseId: getCourse[2].id,
-      urlVideo: 'https://www.youtube.com/watch?v=hdex1hj1dmk&ab_channel=Rocketseat',
+      urlVideo: 'https://www.youtube.com/embed/hdex1hj1dmk?si=DeG9R0V326KJlGZy',
     },
     {
       name: 'Estratégias de SEO',
@@ -181,7 +181,7 @@ async function main() {
       content: 'Como criar e gerenciar campanhas de publicidade eficazes na internet.',
       type: TypeLesson.video,
       courseId: getCourse[2].id,
-      urlVideo: 'https://www.youtube.com/watch?v=hdex1hj1dmk&ab_channel=Rocketseat',
+      urlVideo: 'https://www.youtube.com/embed/hdex1hj1dmk?si=DeG9R0V326KJlGZy',
     },
     {
       name: 'Marketing de Conteúdo',
@@ -194,7 +194,7 @@ async function main() {
       content: 'Utilização de plataformas de redes sociais para promover negócios.',
       type: TypeLesson.video,
       courseId: getCourse[2].id,
-      urlVideo: 'https://www.youtube.com/watch?v=hdex1hj1dmk&ab_channel=Rocketseat',
+      urlVideo: 'https://www.youtube.com/embed/hdex1hj1dmk?si=DeG9R0V326KJlGZy',
     },
     {
       name: 'Análise de Métricas',
@@ -207,7 +207,7 @@ async function main() {
       content: 'Como criar um orçamento eficiente para controlar seus gastos.',
       type: TypeLesson.video,
       courseId: getCourse[3].id,
-      urlVideo: 'https://www.youtube.com/watch?v=hdex1hj1dmk&ab_channel=Rocketseat',
+      urlVideo: 'https://www.youtube.com/embed/hdex1hj1dmk?si=DeG9R0V326KJlGZy',
     },
     {
       name: 'Investimentos Básicos',
@@ -220,7 +220,7 @@ async function main() {
       content: 'Estratégias para reduzir e eliminar dívidas de maneira eficaz.',
       type: TypeLesson.video,
       courseId: getCourse[3].id,
-      urlVideo: 'https://www.youtube.com/watch?v=hdex1hj1dmk&ab_channel=Rocketseat',
+      urlVideo: 'https://www.youtube.com/embed/hdex1hj1dmk?si=DeG9R0V326KJlGZy',
     },
     {
       name: 'Planejamento de Aposentadoria',
@@ -233,7 +233,7 @@ async function main() {
       content: 'Dicas para ensinar crianças sobre finanças desde cedo.',
       type: TypeLesson.video,
       courseId: getCourse[3].id,
-      urlVideo: 'https://www.youtube.com/watch?v=hdex1hj1dmk&ab_channel=Rocketseat',
+      urlVideo: 'https://www.youtube.com/embed/hdex1hj1dmk?si=DeG9R0V326KJlGZy',
     },
     {
       name: 'Estratégias de Economia',
@@ -246,7 +246,7 @@ async function main() {
       content: 'Conheça as letras do alfabeto e suas pronúncias básicas.',
       type: TypeLesson.video,
       courseId: getCourse[4].id,
-      urlVideo: 'https://www.youtube.com/watch?v=hdex1hj1dmk&ab_channel=Rocketseat',
+      urlVideo: 'https://www.youtube.com/embed/hdex1hj1dmk?si=DeG9R0V326KJlGZy',
     },
     {
       name: 'Expressões Comuns em Inglês',
@@ -259,7 +259,7 @@ async function main() {
       content: 'Inicie sua prática de conversação com frases simples e úteis.',
       type: TypeLesson.video,
       courseId: getCourse[4].id,
-      urlVideo: 'https://www.youtube.com/watch?v=hdex1hj1dmk&ab_channel=Rocketseat',
+      urlVideo: 'https://www.youtube.com/embed/hdex1hj1dmk?si=DeG9R0V326KJlGZy',
     },
     {
       name: 'Vocabulário Básico',
@@ -272,7 +272,7 @@ async function main() {
       content: 'Compreenda as regras gramaticais fundamentais do inglês.',
       type: TypeLesson.video,
       courseId: getCourse[4].id,
-      urlVideo: 'https://www.youtube.com/watch?v=hdex1hj1dmk&ab_channel=Rocketseat',
+      urlVideo: 'https://www.youtube.com/embed/hdex1hj1dmk?si=DeG9R0V326KJlGZy',
     },
     {
       name: 'Prática de Conversação Guiada',
