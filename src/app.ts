@@ -9,7 +9,6 @@ export class App {
     this.app = express();
     this.config();
     this.app.use(express.json());
-    this.app.use('/', (req, res) => res.send('Hello World!'));
     this.app.use(router);
     this.app.use(globalError);
   }
